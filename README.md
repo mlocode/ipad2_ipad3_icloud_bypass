@@ -6,7 +6,8 @@ Remove Resistor R1024 and Recover via iTunes
 
 
 # Method 2 (for Wifi-Model and Wifi/4G Model)
-Bypass via Arduino + USB Host Shield (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
+Bypass via Arduino + USB Host Shield which is mainly the Tutorial from Apple Tech 752
+Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 
 1) Download Arduino IDE
 2) Install USBHost Library
