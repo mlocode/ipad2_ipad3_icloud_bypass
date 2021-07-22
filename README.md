@@ -2,7 +2,19 @@
 How To Remove bypass iCloud Activation Lock for iPad Mini1, iPad2, iPad3, iPhone4s and iPod Touch5 with iOS 9.x.x
 
 # Method #1 (only for 4G Devices)
-Remove Resistor R1024 and Recover via iTunes
+!!! Caution: Cellular Module dont work after this !!!!
+Deactivate Cellular Module that Serial Number oft the iPad changes and iCloud Activation Lock is registred on the "old" serial number.
+ ## Parts
+ 1) Disassemble Tools
+ 2) screwdriver
+ 3) solderin iron
+
+## Steps
+1) Disassemble the mainboard od the iPad
+2) Remove Resistor R1024 
+3) Re-Assemble iPad
+4) Download iPad WiFi Firmware
+5) Recover the iPad with the iPad WiFi Firmware via iTunes
 
 
 # Method #2 (for Wifi-Model and Wifi/4G Model)
