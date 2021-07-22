@@ -1,5 +1,5 @@
 # ipad2_ipad3_icloud_bypass
-How To Remove bypass iCloud Lock in iPad2 and iPad3
+How To Remove bypass iCloud Lock in iPad2 and iPad3 in iOs 8.x.x
 
 # Method 1 (only for 4G Devices)
 Remove Resistor R1024 and Recover via iTunes
