@@ -1,11 +1,11 @@
-# ipad2_ipad3_icloud_bypass
-How To Remove bypass iCloud Lock in iPad2 and iPad3 with iOS 8.x.x
+# ipad2_ipad3_icloud_bypass_unlock
+How To Remove bypass iCloud Activation Lock for iPad Mini1, iPad2, iPad3, iPhone4s and iPod Touch5 with iOS 9.x.x
 
-# Method 1 (only for 4G Devices)
+# Method #1 (only for 4G Devices)
 Remove Resistor R1024 and Recover via iTunes
 
 
-# Method 2 (for Wifi-Model and Wifi/4G Model)
+# Method #2 (for Wifi-Model and Wifi/4G Model)
 Bypass via Arduino + USB Host Shield which is mainly the Tutorial from Apple Tech 752
 Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 
@@ -55,9 +55,29 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 ## Bypass iPad
 24) Connect iPad to USBHost-Shield via USB
 25) Connect Arduino Uno to Computer via USB
-26) LED shloud blink 3 Times and 
+26) 3 LED blinks indicate start of flashing process
+27) LED is permanemt on indicates that iPad is now in pwnedDFU-mode
+28) Connect your iPad to the Computer and open Sliver
+29) Go to "A5 Bypass" > choose your model > click on "Load"
+30) If it fails reboot your iPad to pwnedDFU-mode again and try to change "Standart RD" to "Alternate RD" 
+31) Follow Sliver instrustions
+32) Click "Relay Device Info"
+33) Click "Delete Setup.app" and follow Sliver instructions
 
 ## Troubleshooting 
 ### Error while Uploading Sketch to Arduino
 If you get an Error Message like "avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00" while uploading check the Solder Pads on the USB Host Shield like mentioned above
+
+# Conclusion
+I got one iPad3 16GB Cellular and one iPad2 32GB Cellurar with iCloud Activation Lock
+
+I tested Method #1 with the iPad3 Cellular and it worked for me. The disadvantage of Method #1 is that the Cellular Module isnt available anymore. So it doesnt accept SIM-Cards anymore. In my case this doesnt matter...
+
+On iPad 2 Cellular is tested Method #2 and it also worked after some troubleshooting. On Method #2 the Cellular Module is still working. Also there is no need to disassemble the iPad and if your USBHost-Shield is produced prperly also no soldering work.
+
+
+
+
+
+
 
