@@ -15,6 +15,7 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 3) LED and 220Ohm Resitor (for Bypass Status)
 
 ## Prequisites
+1) Check if these Pads are solderd on the USBHost-Shield, if not solder them: BILD
 1) Download Arduino IDE
 2) Install USBHost Library
 3) Patch USB Library
@@ -56,4 +57,7 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 25) Connect Arduino Uno to Computer via USB
 26) LED shloud blink 3 Times and 
 
+## Troubleshooting 
+### Error while Uploading Sketch to Arduino
+If you get an Error Message like "avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00" while uploading check the Solder Pads on the USB Host Shield like mentioned above
 
