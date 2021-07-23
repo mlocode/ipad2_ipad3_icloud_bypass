@@ -82,7 +82,7 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 
 ## Troubleshooting 
 ### Error while Uploading Sketch to Arduino
-If you get an Error Message like "avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00" while uploading check the Solder Pads on the USB Host Shield like mentioned above
+If you get an Error Message like "avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00" while uploading check the Solder Pads on the USB Host Shield as mentioned above
 
 # Conclusion
 I got one iPad3 16GB Cellular and one iPad2 64GB Cellurar both with iCloud Activation Lock.
