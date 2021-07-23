@@ -1,23 +1,27 @@
 # ipad2_ipad3_icloud_bypass_unlock
 How To Remove bypass iCloud Activation Lock for iPad Mini1, iPad2, iPad3, iPhone4s and iPod Touch5 with iOS 9.x.x
 
-# Method #1 (only for 4G Devices)
-!!! Caution: Cellular Module dont work after this !!!!
-Deactivate Cellular Module that Serial Number oft the iPad changes and iCloud Activation Lock is registred on the "old" serial number.
+# Method #1 Hardwareunlock (only for 4G Devices)
+!!! Caution: Cellular Module/GPS dont work after this !!!!
+
+This Method deactivate Cellular Module, so serial number of the iPad changes and iCloud Activation Lock is registred on the "old" serial number. So iPad has no iCloud Activation Lock with "new" serial number.
  ## Parts
  1) Disassemble Tools
  2) screwdriver
  3) solderin iron
 
 ## Steps
-1) Disassemble the mainboard od the iPad
-2) Remove Resistor R1024 
+1) Disassemble the mainboard od the iPad https://de.ifixit.com/Anleitung/iPad+3+Wi-Fi+Logic+Board+austauschen/11603
+2) Remove Resistor R1024 BILD
 3) Re-Assemble iPad
-4) Download iPad WiFi Firmware
-5) Recover the iPad with the iPad WiFi Firmware via iTunes
+4) Download iPad WiFi Firmware (For iPad2 https://ipsw.me/iPad2,1) (For iPad3 https://ipsw.me/iPad3,1)
+5) Recover the iPad with the downloaded iPad WiFi Firmware via iTunes
 
 
-# Method #2 (for Wifi-Model and Wifi/4G Model)
+# Method #2 Softwareunlock(for Wifi-Model and Wifi/4G Model)
+!!! Cellular Module/GPS work after this !!!
+!!! iTunes sync need workaround COMMING SOON !!!!
+
 Bypass via Arduino + USB Host Shield which is mainly the Tutorial from Apple Tech 752
 Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 
@@ -30,7 +34,7 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 1) Check if these Pads are solderd on the USBHost-Shield, if not solder them: BILD
 1) Download Arduino IDE
 2) Install USBHost Library
-3) Patch USB Library
+3) Patch USB Library by open new Terminal and type: (replace /path/to/Arduino with your directory part)
 > cd path/to/Arduino/libraries
 
 > git clone https://github.com/felis/USB_Host_Shield_2.0
@@ -81,13 +85,15 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 If you get an Error Message like "avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00" while uploading check the Solder Pads on the USB Host Shield like mentioned above
 
 # Conclusion
-I got one iPad3 16GB Cellular and one iPad2 32GB Cellurar with iCloud Activation Lock
+I got one iPad3 16GB Cellular and one iPad2 64GB Cellurar both with iCloud Activation Lock.
 
-I tested Method #1 with the iPad3 Cellular and it worked for me. The disadvantage of Method #1 is that the Cellular Module isnt available anymore. So it doesnt accept SIM-Cards anymore. In my case this doesnt matter...
+I tested Method #1 with the iPad3 Cellular and it worked for me. The disadvantage of Method #1 is that the Cellular Module and GPS arent available anymore. So it doesnt accept SIM-Cards anymore. In my case this doesnt matter...
 
-On iPad 2 Cellular is tested Method #2 and it also worked after some troubleshooting. On Method #2 the Cellular Module is still working. Also there is no need to disassemble the iPad and if your USBHost-Shield is produced prperly also no soldering work.
+On iPad 2 Cellular is tested Method #2 and it also worked after some troubleshooting. On Method #2 the Cellular Module is still working. Also there is no need to disassemble the iPad and if your USBHost-Shield is produced properly also no soldering work.
 
+If your iPad is Cellular and you dont need SIM-Card and GPS i'd recommend to use Method #1.
 
+If you have an iPad WiFi Model only Method #2 works for you. Method #2 need a workaround to sync via iTunes, this workaround is comming soon.
 
 
 
