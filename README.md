@@ -11,7 +11,7 @@ This Method deactivate Cellular Module, so serial number of the iPad changes and
  3) solderin iron
 
 ## Steps
-1) Disassemble the mainboard od the iPad https://de.ifixit.com/Anleitung/iPad+3+Wi-Fi+Logic+Board+austauschen/11603
+1) Disassemble the mainboard of the iPad https://de.ifixit.com/Anleitung/iPad+3+Wi-Fi+Logic+Board+austauschen/11603
 2) Remove Resistor R1024
 
 ![Schematic iPad Mainboard](Pictures/sc-hardwareunlock.jpeg)
