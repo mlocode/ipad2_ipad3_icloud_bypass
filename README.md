@@ -1,6 +1,20 @@
 # ipad2_ipad3_icloud_bypass_unlock
 How To Remove bypass iCloud Activation Lock for iPad Mini1, iPad2, iPad3, iPhone4s and iPod Touch5 with iOS 9.x.x
 
+#Table of Contents
+- [Method #1 Hardwareunlock (only for 4G Devices)](#method--1-hardwareunlock--only-for-4g-devices-)
+  * [Parts](#parts)
+  * [Steps](#steps)
+- [Method #2 Softwareunlock(for Wifi-Model and Wifi/4G Model)](#method--2-softwareunlock-for-wifi-model-and-wifi-4g-model-)
+  * [Parts](#parts-1)
+  * [Prequisites](#prequisites)
+  * [Get iPad ready](#get-ipad-ready)
+  * [Get Arduino ready](#get-arduino-ready)
+  * [Bypass iPad](#bypass-ipad)
+  * [Troubleshooting](#troubleshooting)
+    + [Error while Uploading Sketch to Arduino](#error-while-uploading-sketch-to-arduino)
+- [Conclusion](#conclusion)
+
 # Method #1 Hardwareunlock (only for 4G Devices)
 !!! Caution: Cellular Module/GPS dont work after this !!!!
 
