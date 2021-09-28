@@ -51,11 +51,11 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 
 > git apply path/to/usb_host_library.patch
 
-4) Download Arduino Project https://github.com/synackuk/checkm8-a5
-5) Rename Project to "checkm8-a5" and open it in Arduino IDE
-6) Download Sliver 5.4 https://www.appletech752.com/Downloads/SliverV5.4.dmg
-7) Move Sliver to Application Folder (Sliver must be in your Applications folder in Finder! Sliver only supports MacOS High Sierra and Higher!)
-8) Left click on Sliver and select 'show package contents'. Type 'sudo chmod -R 755' in a new terminal window, then click the space bar, then drag and drop the resources folder into Terminal. Click enter.
+5) Download Arduino Project https://github.com/synackuk/checkm8-a5
+6) Rename Project to "checkm8-a5" and open it in Arduino IDE
+7) Download Sliver 5.4 https://www.appletech752.com/Downloads/SliverV5.4.dmg
+8) Move Sliver to Application Folder (Sliver must be in your Applications folder in Finder! Sliver only supports MacOS High Sierra and Higher!)
+9) Left click on Sliver and select 'show package contents'. Type 'sudo chmod -R 755' in a new terminal window, then click the space bar, then drag and drop the resources folder into Terminal. Click enter.
 
 ## Get iPad ready
 10) Open Sliver
@@ -66,40 +66,42 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 ![](Pictures/sc-sliver.png) ![](Pictures/sc-sliver2.png) ![](Pictures/sc-sliver3.png)
 ![](Pictures/sc-cpid.png)
 
-15) Download Arduino Project https://github.com/synackuk/checkm8-a5
+14) Download Arduino Project https://github.com/synackuk/checkm8-a5
 
 ## Get Arduino ready 
-16) Rename Project to "checkm8-a5" and open it in Arduino IDE
-17) Change the CPID Number in the Arduino project to cour noted CPID-Number
+15) Rename Project to "checkm8-a5" and open it in Arduino IDE
+16) Change the CPID Number in the Arduino project to cour noted CPID-Number
 
 ![](Pictures/sc-ard-cpid.png)
 
-19) Connect Aruduino via USB to Computer (USB A cable) (Greed LED on Arduino should be on)
-20) Select USB Port in Arduino IDE
+17) Connect Aruduino via USB to Computer (USB A cable) (Greed LED on Arduino should be on)
+18) Select USB Port in Arduino IDE
 
 ![](Pictures/sc-ard-model.png)
 ![](Pictures/sc-ard-port.png)
 
-21) Upload sketch to Arduino Uno
-22) Unplug Arduino from Computer
-23) Plug USBHost-Shield onto Arduino
-24) Connect LED and Resitor to USBShield SCHALTPLAN
+19) Upload sketch to Arduino Uno
+20) Unplug Arduino from Computer
+21) Plug USBHost-Shield onto Arduino
+22) Connect LED and Resitor to USBShield SCHALTPLAN
 
 ## Bypass iPad
-24) Connect iPad to USBHost-Shield via USB
-25) Connect Arduino Uno to Computer via USB
-26) 3 LED blinks indicate start of flashing process
-27) LED is permanemt on indicates that iPad is now in pwnedDFU-mode
-28) Connect your iPad to the Computer and open Sliver
+23) Connect iPad to USBHost-Shield via USB
+24) Connect Arduino Uno to Computer via USB
+25) 3 LED blinks indicate start of flashing process
+26) LED is permanemt on indicates that iPad is now in pwnedDFU-mode
+27) Connect your iPad to the Computer and open Sliver
 
 ![](Pictures/sc-sliver.png)
+
+28) Go to "A5 Bypass" > choose your model > click on "Load"
+
 ![](Pictures/sc-sliver3.png)
 
-30) Go to "A5 Bypass" > choose your model > click on "Load"
-31) If it fails reboot your iPad to pwnedDFU-mode again and try to change "Standart RD" to "Alternate RD" 
-32) Follow Sliver instrustions
-33) Click "Relay Device Info"
-34) Click "Delete Setup.app" and follow Sliver instructions
+29) If it fails reboot your iPad to pwnedDFU-mode again and try to change "Standart RD" to "Alternate RD" 
+30) Follow Sliver instrustions
+31) Click "Relay Device Info"
+32) Click "Delete Setup.app" and follow Sliver instructions
 
 ## Troubleshooting 
 ### Error while Uploading Sketch to Arduino
