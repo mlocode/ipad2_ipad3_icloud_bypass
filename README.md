@@ -34,10 +34,13 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 3) LED and 220Ohm Resitor (for Bypass Status)
 
 ## Prequisites
-1) Check if these Pads are solderd on the USBHost-Shield, if not solder them: BILD
-1) Download Arduino IDE
-2) Install USBHost Library
-3) Patch USB Library by open new Terminal and type: (replace /path/to/Arduino with your directory part)
+1) Check if these Pads are solderd on the USBHost-Shield, if not solder them: 
+
+![](Pictures/usb_host_shield_fix_small.jpg)
+
+2) Download Arduino IDE
+3) Install USBHost Library
+4) Patch USB Library by open new Terminal and type: (replace /path/to/Arduino with your directory part)
 > cd path/to/Arduino/libraries
 
 > git clone https://github.com/felis/USB_Host_Shield_2.0
@@ -59,17 +62,28 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 11) Connect iPad via USB
 12) Enter DFU Mode on iPad (Turn iPad off, press Power-Button and Home-Button for 10s, then release Power-Button and keep Home-Button pressed, then wait until iTunes detect iPad in Recovery Mode(iTunes))
 13) Check CPID-Number via Sliver "A6 Bypass" > "iPhone 5" > "Enter pwned DFU" > Note The CPID-Number, mine is 8940
-14) Download Arduino Project https://github.com/synackuk/checkm8-a5
+
+![](Pictures/sc-sliver.png) ![](Pictures/sc-sliver2.png) ![](Pictures/sc-sliver3.png)
+![](Pictures/sc-cpid.png)
+
+15) Download Arduino Project https://github.com/synackuk/checkm8-a5
 
 ## Get Arduino ready 
 16) Rename Project to "checkm8-a5" and open it in Arduino IDE
 17) Change the CPID Number in the Arduino project to cour noted CPID-Number
-18) Connect Aruduino via USB to Computer (USB A cable) (Greed LED on Arduino should be on)
-19) Select USB Port in Arduino IDE
-20) Upload sketch to Arduino Uno
-21) Unplug Arduino from Computer
-22) Plug USBHost-Shield onto Arduino
-23) Connect LED and Resitor to USBShield SCHALTPLAN
+
+![](Pictures/sc-ard-cpid.png)
+
+19) Connect Aruduino via USB to Computer (USB A cable) (Greed LED on Arduino should be on)
+20) Select USB Port in Arduino IDE
+
+![](Pictures/sc-ard-model.png)
+![](Pictures/sc-ard-port.png)
+
+21) Upload sketch to Arduino Uno
+22) Unplug Arduino from Computer
+23) Plug USBHost-Shield onto Arduino
+24) Connect LED and Resitor to USBShield SCHALTPLAN
 
 ## Bypass iPad
 24) Connect iPad to USBHost-Shield via USB
@@ -77,11 +91,15 @@ Apple Tech 752 (https://www.youtube.com/watch?v=oMuprT7YCFo&t=11s)
 26) 3 LED blinks indicate start of flashing process
 27) LED is permanemt on indicates that iPad is now in pwnedDFU-mode
 28) Connect your iPad to the Computer and open Sliver
-29) Go to "A5 Bypass" > choose your model > click on "Load"
-30) If it fails reboot your iPad to pwnedDFU-mode again and try to change "Standart RD" to "Alternate RD" 
-31) Follow Sliver instrustions
-32) Click "Relay Device Info"
-33) Click "Delete Setup.app" and follow Sliver instructions
+
+![](Pictures/sc-sliver.png)
+![](Pictures/sc-sliver3.png)
+
+30) Go to "A5 Bypass" > choose your model > click on "Load"
+31) If it fails reboot your iPad to pwnedDFU-mode again and try to change "Standart RD" to "Alternate RD" 
+32) Follow Sliver instrustions
+33) Click "Relay Device Info"
+34) Click "Delete Setup.app" and follow Sliver instructions
 
 ## Troubleshooting 
 ### Error while Uploading Sketch to Arduino
