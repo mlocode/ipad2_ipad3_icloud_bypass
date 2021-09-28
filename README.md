@@ -12,8 +12,8 @@ This Method deactivate Cellular Module, so serial number of the iPad changes and
 
 ## Steps
 1) Disassemble the mainboard od the iPad https://de.ifixit.com/Anleitung/iPad+3+Wi-Fi+Logic+Board+austauschen/11603
-2) Remove Resistor 
-R1024 [Schematic iPad Mainboard](Pictures/sc-hardwareunlock.jpeg)
+2) Remove Resistor R1024
+![Schematic iPad Mainboard](Pictures/sc-hardwareunlock.jpeg)
 3) Re-Assemble iPad
 4) Download iPad WiFi Firmware (For iPad2 https://ipsw.me/iPad2,1) (For iPad3 https://ipsw.me/iPad3,1)
 5) Recover the iPad with the downloaded iPad WiFi Firmware via iTunes
